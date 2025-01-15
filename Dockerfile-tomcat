@@ -13,7 +13,7 @@ RUN mkdir -p $CATALINA_HOME && \
 
 # Copy student.war and mysql.jar
 COPY student.war $CATALINA_HOME/webapps/
-COPY mysql.jar $CATALINA_HOME/lib/
+COPY mysql-connector.jar $CATALINA_HOME/lib/
 
 # Set permissions and start Tomcat
 RUN chmod 777 $CATALINA_HOME/bin/catalina.sh
