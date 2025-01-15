@@ -1,0 +1,8 @@
+# Base image
+FROM mariadb:10.5
+
+# Environment variables for MariaDB
+ENV MYSQL_ROOT_PASSWORD=root_password
+ENV MYSQL_DATABASE=student_db
+ENV MYSQL_USER=user
+ENV MYSQL_PASSWORD=password
